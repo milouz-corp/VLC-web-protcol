@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Security.Principal;
 using System.Text;
 using System.Windows.Forms;
 
@@ -23,6 +24,14 @@ namespace VLC_web_protocol
                 }
                 else
                 {
+
+                    WindowsPrincipal pricipal = new WindowsPrincipal(WindowsIdentity.GetCurrent());
+
+                    if (!pricipal.IsInRole(WindowsBuiltInRole.Administrator))
+                    {
+                        RunElevated(Application.ExecutablePath);
+                        return;
+                    }
 
                     try
                     {
@@ -77,6 +86,25 @@ namespace VLC_web_protocol
                 MessageBox.Show(lines + ex.ToString());
             }
 
+        }
+
+        private static void RunElevated(string fileName)
+        {
+            ProcessStartInfo processInfo = new ProcessStartInfo();
+            processInfo.Verb = "runas";
+
+            processInfo.FileName = fileName;
+            try
+            {
+                Process.Start(processInfo);
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                MessageBox.Show(ex.ToString());
+#endif
+                //Do nothing. Probably the user canceled the UAC window
+            }
         }
     }
 }
