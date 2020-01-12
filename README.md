@@ -15,8 +15,8 @@ Download the executable, run it once as Administrator to do the setup. it will a
 
 ## Binary
 
-You can dowload the released version here :
-[Download](https://github.com/milouz-corp/VLC-web-protcol/releases/download/1/VLC-web-protocol.exe)
+You can dowload the lateset released here :
+[Download](https://github.com/milouz-corp/VLC-web-protcol/releases/latest/download/VLC-web-protocol.exe)
 
 then try the following link :
 
