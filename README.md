@@ -33,4 +33,4 @@ you can also add args separated by the url encoded space "%20" :
 ```html
 <a href='vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4%20--start-time=83.4'>Link2</a>
 ```
- try it live [HERE](http://htmlpreview.github.io/?https://github.com/milouz-corp/VLC-web-protcol/edit/master/sample.html)
+ try it live [HERE](http://htmlpreview.github.io/?https://github.com/milouz-corp/VLC-web-protcol/blob/master/sample.html)
