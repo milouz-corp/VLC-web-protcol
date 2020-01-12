@@ -1,5 +1,5 @@
 # VLC-web-protcol
-a windows executable allowing opening vlc:// link in browser with VLC
+a Windows© executable allowing opening vlc:// link in browser with VLC
 
 ## Prerequisite
 
@@ -15,11 +15,11 @@ Download the executable, run it once as Administrator to do the setup. it will a
 
 -register the vlc:// protocol
 
--add it to the chrome whitlist to remove the annoying  (each time) confirmation.
+-add it to the chrome whitelist to remove the annoying  (each time) confirmation.
 
 ## Binary
 
-You can dowload the lateset released here :
+You can dowload the latest released here :
 [Download](https://github.com/milouz-corp/VLC-web-protcol/releases/latest/download/VLC-web-protocol.exe)
 
 then try the following link :
