@@ -20,8 +20,12 @@ You can dowload the released version here :
 
 then try the following link :
 
-[vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4](vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
+```html
+<a href='vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'>Link</a>
+```
 
 you can also add args separated by the url encoded space "%20" :
 
-[vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4%20--start-time=83.4](vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4%20--start-time=83.4)
+```html
+<a href='vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4%20--start-time=83.4'>Link</a>
+```
