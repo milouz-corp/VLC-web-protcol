@@ -39,6 +39,7 @@ namespace VLC_web_protocol
                         var paths = new List<string>();
                         paths.Add(Environment.ExpandEnvironmentVariables("%ProgramW6432%"));
                         paths.Add(Environment.ExpandEnvironmentVariables("%ProgramFiles(x86)%"));
+                        paths.Add(Environment.ExpandEnvironmentVariables("%ProgramFiles%"));
 
                         var exeName = Path.GetFileName(Environment.GetCommandLineArgs()[0]);
                         var vlcFound = false;
