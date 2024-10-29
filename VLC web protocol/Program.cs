@@ -19,6 +19,7 @@ namespace VLC_web_protocol
                 if (Environment.GetCommandLineArgs().Length > 1)
                 {
                     var vlcArgs = Environment.GetCommandLineArgs()[1].Substring(6);
+                    vlcArgs = vlcArgs.Replace("https//", "https://");
                     vlcArgs = vlcArgs.Replace("%20", " ");
                     Process.Start(AppDomain.CurrentDomain.BaseDirectory + "vlc.exe", vlcArgs);
                 }
